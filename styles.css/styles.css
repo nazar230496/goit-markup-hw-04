@@ -168,6 +168,7 @@ color: var(--primery-text-color);
     rgba(47, 48, 58, 0.4)
    ),
   url("../images/fon.jpg");
+  background-color: var(--footer-color);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -175,7 +176,6 @@ color: var(--primery-text-color);
 .main-bg {
   padding-top: 200px;
   padding-bottom: 200px;
- 
 text-align: center;
  }
  .main-title { 
@@ -205,7 +205,17 @@ background: var(--accent-color);
 
 
                         /*  примери работ  */
-
+.list-item::before {
+  content: "";
+  display: block;
+  height: 120px;
+  outline: 1px solid red;
+  background-image: url("../images/tat.svg") ;
+background-size: contain;
+background-repeat: no-repeat;
+background-position: center;
+background-color: #F5F4FA;
+}
 .main-list {
 display: flex;
 flex-wrap: wrap;
