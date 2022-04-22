@@ -383,6 +383,8 @@ color: rgba(255, 255, 255, 0.6);
   }
     .network-iteam {
       display: flex;
+      justify-content: center;
+      align-items: center;
   
   }
   .network-list .network-iteam + .network-iteam {
