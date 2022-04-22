@@ -209,12 +209,22 @@ background: var(--accent-color);
   content: "";
   display: block;
   height: 120px;
-  outline: 1px solid red;
-  background-image: url("../images/tat.svg") ;
-background-size: contain;
 background-repeat: no-repeat;
 background-position: center;
 background-color: #F5F4FA;
+}
+                      /* иконки примери работ */
+.icon-tat::before {
+  background-image: url("../images/tat.svg");
+}
+.icon-cat::before {
+  background-image: url("../images/cat.svg");
+}
+.icon-not::before {
+  background-image: url("../images/not.svg");
+}
+.icon-avst::before {
+  background-image: url("../images/astronavt.svg");
 }
 .main-list {
 display: flex;
