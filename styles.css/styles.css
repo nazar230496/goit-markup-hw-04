@@ -38,6 +38,7 @@ img {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+  outline: 2px solid red;
 }
 .visually-hidden {
   position: absolute;
@@ -355,6 +356,54 @@ line-height: 1.71;
 letter-spacing: 0.03em;
 color: rgba(255, 255, 255, 0.6);
   }
+  .footer-heading {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    
+    color: #FFFFFF;
+    margin-bottom: 20px;
+  }
+  .footer-div {
+    display: flex;
+  }
+  .network-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    fill: #ffffff;
+  }
+    .network-iteam {
+      display: flex;
+  
+  }
+  .network-list .network-iteam + .network-iteam {
+    margin-left: 10px;
+  }
+  .network-list {
+    display: flex;
+    padding: 0;
+    margin: 0;
+
+  }
+  .link-icon {
+    height: 44px;
+    width: 44px;
+  }
+  .network-footer {
+    margin-left: 70px;
+    padding-top: 12px;
+    }
+
+
                     /* страница портфолио */
     .portfolio-nav {
       display: flex;
@@ -432,8 +481,7 @@ color:var(--second-text-color);
     letter-spacing: 0.03em;
     color: var(--primery-text-color);
    }
-   
-
+ 
 
 
  
