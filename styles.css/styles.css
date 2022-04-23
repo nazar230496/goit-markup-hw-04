@@ -38,7 +38,6 @@ img {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 2px solid red;
 }
 .visually-hidden {
   position: absolute;
@@ -155,11 +154,15 @@ line-height: 1.33;
 letter-spacing: 0.02em;
 color: var(--primery-text-color);
 }
-.tel-nav:hover, .tel-nav:focus {
-   color:var(--accent-color); 
+.icon-contact {
+  fill: currentColor;
 }
 
-                                 /* main */
+.tel-nav:hover, .tel-nav:focus {
+color:var(--accent-color);
+}
+                                
+                  /* main */
  .section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -212,7 +215,7 @@ background: var(--accent-color);
 
 
                         /*  примери работ  */
-.list-item::before {
+/* .list-item::before {
   content: "";
   display: block;
   height: 120px;
@@ -221,7 +224,7 @@ background-position: center;
 background-color: #F5F4FA;
 }
                       /* иконки примери работ */
-.icon-tat::before {
+/* .icon-tat::before {
   background-image: url("../images/tat.svg");
 }
 .icon-cat::before {
@@ -232,6 +235,15 @@ background-color: #F5F4FA;
 }
 .icon-avst::before {
   background-image: url("../images/astronavt.svg");
+} */
+.examples-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  margin-bottom: 30px;
+  background: #F5F4FA;
+  border-radius: 4px;
 }
 .main-list {
 display: flex;
@@ -263,7 +275,7 @@ color: var(--title-text-color);
   text-align: center;
 }
 .main-heading {
-  
+  text-align: center;
   margin-bottom: 50px;
 font-weight: 700;
 font-size: 36px;
@@ -314,7 +326,55 @@ font-size: 16px;
 line-height: 1.18;
 letter-spacing: 0.03em;
 color: var(--primery-text-color);
-
+}
+.network-team {
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 16px;
+}
+.network-team-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  fill: #AFB1B8;
+}
+.network-team .network-team-list + .network-team-list {
+  margin-left: 10px;
+}
+.network-team-link:hover, .network-team-link:focus {
+background: var(--accent-color);
+fill: #FFFFFF;
+}
+                  /* постоянные клиенты */
+.customers{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.customers-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+  fill: #AFB1B8;
+}
+.customers-link:hover, .customers-link:focus {
+  fill: var(--accent-color);
+  border-color: var(--accent-color);
+}
+.customers .customers-iteam + .customers-iteam {
+  margin-left: 30px;
 }
                           /* Footer */
 .footer {
@@ -388,7 +448,7 @@ color: rgba(255, 255, 255, 0.6);
     background-color: rgba(255, 255, 255, 0.1);
     fill: #ffffff;
   }
-  .network-link:hover {
+  .network-link:hover, .network-link:focus {
     background-color: var(--accent-color);
   }
     .network-iteam {
@@ -448,7 +508,7 @@ cursor: pointer;
   .examples-work-link {
     display: inline-block;
   }
-  .examples-work-link:hover {
+  .examples-work-link:hover, .examples-work-link:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
     0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
