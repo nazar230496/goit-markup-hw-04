@@ -304,6 +304,7 @@ color: var(--title-text-color);
   0px 1px 1px rgba(0, 0, 0, 0.14),
   0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  background-color: #FFFFFF;
 }
 .people-main .iteam + .iteam {
   margin-left: 30px;
@@ -361,10 +362,6 @@ fill: #FFFFFF;
   align-items: center;
   width: 170px;
   height: 92px;
-  padding-left: 32px;
-  padding-right: 32px;
-  padding-top: 16px;
-  padding-bottom: 16px;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
   fill: #AFB1B8;
@@ -436,6 +433,7 @@ color: rgba(255, 255, 255, 0.6);
     margin-bottom: 20px;
   }
   .footer-div {
+    align-items: baseline;
     display: flex;
   }
   .network-link {
@@ -468,7 +466,7 @@ color: rgba(255, 255, 255, 0.6);
   
   .network-footer {
     margin-left: 70px;
-    padding-top: 12px;
+    
     }
 
 
